@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./Hero.module.scss";
+import Button from '@/components/common/Button/Button';
 
 export default function Hero() {
   return (
@@ -9,7 +10,7 @@ export default function Hero() {
       <div className={styles.left}>
         <h1 className={styles.title}>Book Your First Clean Today!</h1>
 
-        <button className={styles.cta}>Book Now !</button>
+        <Button>Book Now !</Button>
 
         <div className={styles.features}>
           <ul>
