@@ -3,15 +3,13 @@
  
  .app {
   display: flex;
-  flex-direction: row;
-  min-height: 100vh;
+  flex-direction: column;
 }
 
 .main {
   margin: 0 auto;
-  margin-top: 5rem; // Same as height of Header.jsx
+  margin-top: 5rem;
   width: 100%;
-  flex: 1 0 auto;
   
 }
 
