@@ -1,0 +1,17 @@
+ @use "sass:color";
+@use '@/styles/scss/abstracts/' as *;
+ 
+ .app {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.main {
+  margin: 0 auto;
+  margin-top: 5rem; // Same as height of Header.jsx
+  width: 100%;
+  flex: 1 0 auto;
+  
+}
+

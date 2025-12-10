@@ -1,0 +1,74 @@
+@use "sass:color";
+@use '@/styles/scss/abstracts' as *;
+
+.wrapper {
+max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  background-color: $primaryColor;
+  margin: 3rem 3rem;
+  padding: 1rem;
+}
+
+/* Columna izquierda */
+.left {
+  align-items: center;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  
+}
+
+/* Título */
+.title {
+  font-size: 5rem;
+  font-family: "Work Sans", sans-serif;
+  color: $complementaryColor;
+}
+
+/* Botón */
+.cta {
+  margin-top: 1rem;
+  background-color: $brandColor;
+  margin-left: 0;
+  color: $complementaryColor;
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  border-radius: 10px;
+  width: fit-content;
+  border: none;
+  cursor: pointer;
+}
+
+/* Lista en columnas */
+.features {
+  margin-top: 1rem;
+  display: flex;
+  font-size: 1.2rem;
+ 
+
+  ul {
+    list-style: none;
+    white-space: nowrap;
+    
+  }
+
+  li::before {
+    content: "✔️ ";
+  }
+
+  li{
+    margin-bottom: 0.6rem;
+  }
+}
+
+/* Columna derecha */
+Image .right {
+  margin: 0;
+  display: flex;
+  align-items: self-start;
+  justify-content: flex-start;
+}
