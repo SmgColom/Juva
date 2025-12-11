@@ -1,12 +1,14 @@
-import Hero from "../components/layout/Hero/Hero";
-import Services from "../components/layout/Hero/Services";
+// src/pages/index.jsx
+import Hero from "../components/layout/Hero/Hero.jsx";
+import ServicesList from "../components/services/ServicesList.jsx";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <Services />
+      <ServicesList />
     </>
   );
 }
+
 
