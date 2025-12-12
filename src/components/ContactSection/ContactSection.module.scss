@@ -1,0 +1,38 @@
+@use "sass:color";
+@use '@/styles/scss/abstracts/' as *;
+
+.wrapper {
+  background-color: $primaryColor;
+  margin: 3rem 3rem;
+  padding: 1rem;
+}
+
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Work Sans", sans-serif;
+  color: $complementaryColor;
+  margin-bottom: 3rem;
+}
+
+.ContactContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.ContactForm{
+    width: 100%;
+    text-align: left;
+}
+
+.ContactInfo{
+    width: 50%;
+    align-items: flex-start;
+}
+
+
+
+

@@ -18,13 +18,12 @@
 }
 
 .grid {
-  color: $complementaryColor;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 2rem;
   width: 100%;
   max-width: 1300px;
-  margin: 2rem 2rem 0rem 2rem;
+  margin: 2rem 2rem;
   padding: 2rem;
   justify-items: center;
 }
