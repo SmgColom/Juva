@@ -20,7 +20,6 @@
      
     }
 
-
     small {
       color: red;
       font-size: 0.9rem;
@@ -34,32 +33,32 @@
     }
   }
 
-  .infoWrapper {
-    display: flex;
-    flex: 1 1 50%;
-    flex-direction: row;
-    justify-content: left;
-  }
 
   .infoBox {
-    gap: 0rem;
-    text-align: center;
-    color: $complementaryColor;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   color: $complementaryColor;
+   font-size: 1.5rem;
+   width: 35rem;
+  }
 
 
     .contact__icon {
-      font-size: 2.4rem;
+      font-size: 2.5rem;
       color: $complementaryColor;
       margin-bottom: 0.5rem;
-    }
+    
 
     h3 {
       margin: 0rem;
-      font-size: 1.5em;
+      font-size: 2.5rem;
       color: $complementaryColor;
       text-align: center;
     }
-  }
+    }
 
   
 
