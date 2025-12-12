@@ -17,7 +17,7 @@ export const services = [
     id: 2,
     title: "Deep Clean",
     description: "Thorough scrubbing and dusting to refresh your home.",
-    icon: "/broom.svg",
+    icon: "/Broom.svg",
     details: `
       • Baseboards  
       • Inside cabinets  
