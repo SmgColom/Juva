@@ -10,7 +10,12 @@ export default function Hero() {
       <div className={styles.left}>
         <h1 className={styles.title}>Book Your First Clean Today!</h1>
 
-        <Button>Book Now !</Button>
+        <Button
+          href="https://calendar.app.google/nawraayZFF6uA6kx7"
+          target="_blank"
+        >
+          Book Now!
+        </Button>
 
         <div className={styles.features}>
           <ul>
@@ -28,8 +33,9 @@ export default function Hero() {
       </div>
 
       {/* COLUMNA DERECHA */}
-      <div >
-        <Image className={styles.right}
+      <div>
+        <Image
+          className={styles.right}
           src="/Logo.png"
           alt="Hero image"
           width={550}
@@ -41,4 +47,6 @@ export default function Hero() {
     </div>
   );
 }
+
+
 

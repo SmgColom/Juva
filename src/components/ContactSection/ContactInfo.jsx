@@ -21,7 +21,7 @@ const ContactInfo = () => (
         <div className={styles.contact__icon}><MdEmail /></div>
       </a>
       <h3>Email</h3>
-      <p>juva@gmail.com</p>
+      <p>juvacleaning@gmail.com</p>
     </div>
   </div>
 );
