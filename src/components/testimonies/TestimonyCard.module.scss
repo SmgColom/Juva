@@ -1,31 +1,60 @@
 @use "sass:color";
-@use '@/styles/scss/abstracts' as *;
+@use "@/styles/scss/abstracts" as *;
 
 .card {
+  position: relative;
   background-color: $primaryColor;
   border-radius: 32px;
-  padding: 2rem 2rem;
+  padding: 3rem 2.5rem;
   text-align: center;
   width: 100%;
   max-width: 350px;
-  min-height: 370px;
+  min-height: 380px;
+
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  justify-content: center;
+  gap: 1.2rem;
+
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
 }
+
 
 .name {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
-  margin-top: 0.5rem;
+  color: $complementaryColor;
+  margin-bottom: 0.5rem;
 }
 
+
 .testimony {
-  margin-top: 0.5rem;
-  line-height: 1.5;
-  font-size: 1.2rem;
-  color: $complementaryColor;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: color.scale($complementaryColor, $lightness: -10%);
+  max-width: 90%;
+  margin: 0 auto;
 }
+
+
+.quoteStart {
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  font-size: 4rem;
+  color: $complementaryColor;
+  line-height: 1;
+}
+
+
+.quoteEnd {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: $complementaryColor;
+  line-height: 1;
+}
+
 

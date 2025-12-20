@@ -7,6 +7,11 @@
   background-color: white;
   width: 100%;
   margin: 0 auto;
+
+  :global(.swiper-slide) {
+  display: flex;
+  justify-content: center;
+}
 }
 
 .titulo {
@@ -16,6 +21,8 @@
   color: $complementaryColor;
   margin-bottom: 3rem;
 }
+
+
 
 .grid {
   display: grid;
@@ -27,3 +34,4 @@
   padding: 2rem;
   justify-items: center;
 }
+
