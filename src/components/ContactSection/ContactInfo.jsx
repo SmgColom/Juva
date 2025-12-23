@@ -17,7 +17,7 @@ const ContactInfo = () => (
       <p>415 563 521</p>
     </div>
     <div>
-      <a href="mailto:milena.toro@asesorsura.com">
+      <a href="mailto:juvacleaning@gmail.com">
         <div className={styles.contact__icon}><MdEmail /></div>
       </a>
       <h3>Email</h3>
