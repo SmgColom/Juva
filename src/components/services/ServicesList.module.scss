@@ -1,12 +1,22 @@
 @use "sass:color";
 @use '@/styles/scss/abstracts' as *;
 
+
 .wrapper {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
   background-color: white;
-  width: 100%;
+  width: 100vw;
+
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.content {
+  max-width: 1300px;
   margin: 0 auto;
+  padding: 2rem 2rem 3rem;
 }
 
 .titulo {
@@ -17,14 +27,49 @@
   margin-bottom: 3rem;
 }
 
+
 .grid {
-  color: $complementaryColor;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: 2rem;
-  width: 100%;
-  max-width: 1300px;
-  margin: 2rem 2rem 0rem 2rem;
-  padding: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;              
   justify-items: center;
+}
+
+
+@media (max-width: 1023px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .titulo {
+    font-size: 2.6rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .content {
+    padding: 2rem 1.5rem 3rem;
+  }
+
+  .titulo {
+    font-size: 2.2rem;
+  }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .content {
+    max-width: 1200px;
+    margin: 0rem 2rem ;       
+  }
+  .grid {
+    gap: 1rem;
+  }
 }

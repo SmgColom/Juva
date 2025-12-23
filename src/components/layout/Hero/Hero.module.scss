@@ -2,34 +2,36 @@
 @use '@/styles/scss/abstracts' as *;
 
 .wrapper {
-  max-width: 1400px;
+  background-color: $primaryColor;
+  width: 100%;
+}
+
+
+.content{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   text-align: left;
-  background-color: $primaryColor;
-  margin: 3rem 3rem;
-  padding: 1rem;
+  padding: 0rem 4rem 2rem 4rem;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
-/* Columna izquierda */
+
 .left {
-  align-items: center;
-  margin-top: 0.5rem;
   display: flex;
   flex-direction: column;
-  max-width: 50%;
-  
 }
 
-/* Título */
+
 .title {
   font-size: 5rem;
   font-family: "Work Sans", sans-serif;
   color: $complementaryColor;
 }
 
-/* Botón */
+
 .cta {
   margin-top: 1rem;
   background-color: $brandColor;
@@ -43,32 +45,64 @@
   cursor: pointer;
 }
 
-/* Lista en columnas */
+
 .features {
   margin-top: 1rem;
   display: flex;
   font-size: 1.2rem;
- 
 
   ul {
     list-style: none;
-    white-space: nowrap;
-    
+    padding: 0;
   }
 
   li::before {
     content: "✔️ ";
   }
 
-  li{
+  li {
     margin-bottom: 0.6rem;
   }
 }
 
-/* Columna derecha */
-Image .right {
-  margin: 0;
+
+.right {
   display: flex;
-  align-items: self-start;
-  justify-content: flex-start;
+  align-items: flex-start;
 }
+
+
+@media (max-width: 1024px) {
+  .content {
+    gap: 3rem;
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .features {
+    font-size: 1.1rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .content {
+    margin-top: 0rem;
+    padding-top: 0rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 2.6rem;
+  }
+}
+

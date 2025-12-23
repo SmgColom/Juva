@@ -9,24 +9,18 @@ export default function ServicesList() {
   const [selected, setSelected] = useState(null);
 
   return (
-    <div className={styles.wrapper}>
-      <h1 className={styles.titulo}>Our Services</h1>
+    <section className={styles.wrapper}>
+      <div className={styles.content}>
+        <h2 className={styles.titulo}>Our Services</h2>
 
-      <div className={styles.grid}>
-        {services.map((service) => (
-          <ServiceCard
-            key={service.id}
-            service={service}
-            onOpen={setSelected}
-          />
-        ))}
+        <div className={styles.grid}>
+          {services.map((service) => (
+            <ServiceCard key={service.id} service={service} onOpen={setSelected} />
+          ))}
+        </div>
+
+        <ServiceModal service={selected} onClose={() => setSelected(null)} />
       </div>
-
-      <ServiceModal
-        service={selected}
-        onClose={() => setSelected(null)}
-      />
-    </div>
+    </section>
   );
 }
-

@@ -22,7 +22,10 @@
   margin-bottom: 3rem;
 }
 
-
+:global(.swiper-slide) {
+  display: flex;
+  justify-content: center;
+}
 
 .grid {
   display: grid;

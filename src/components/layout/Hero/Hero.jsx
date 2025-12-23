@@ -6,6 +6,7 @@ export default function Hero() {
   return (
     <div className={styles.wrapper}>
 
+      <div className={styles.content}>
       {/* COLUMNA IZQUIERDA */}
       <div className={styles.left}>
         <h1 className={styles.title}>Book Your First Clean Today!</h1>
@@ -45,8 +46,7 @@ export default function Hero() {
       </div>
 
     </div>
+</div>
   );
 }
-
-
-
+      
