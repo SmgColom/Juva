@@ -10,7 +10,6 @@
   width: 100%;
   max-width: 350px;
   min-height: 380px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,14 +19,12 @@
   overflow: hidden;
 }
 
-
 .name {
   font-size: 1.4rem;
   font-weight: 700;
   color: $complementaryColor;
   margin-bottom: 0.5rem;
 }
-
 
 .testimony {
   font-size: 1.05rem;
@@ -36,7 +33,6 @@
   max-width: 90%;
   margin: 0 auto;
 }
-
 
 .quoteStart {
   position: absolute;
@@ -47,7 +43,6 @@
   line-height: 1;
 }
 
-
 .quoteEnd {
   position: absolute;
   bottom: 1.5rem;
@@ -56,5 +51,36 @@
   color: $complementaryColor;
   line-height: 1;
 }
+
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .card {
+    max-width: 300px;      
+    min-height: 340px;
+    padding: 2.2rem 2rem;
+    gap: 1rem;
+  }
+
+  .quoteStart {
+    font-size: 3.2rem;
+    top: 1.2rem;
+    left: 1.6rem;
+  }
+
+  .quoteEnd {
+    font-size: 2.4rem;
+    bottom: 1.2rem;
+    right: 1.6rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    max-width: 250px;
+    max-height: 240px;
+    padding: 2rem 1.8rem;
+  }
+}
+
 
 

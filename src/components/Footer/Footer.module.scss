@@ -8,7 +8,7 @@
   justify-content: space-between;
   max-width: 1500px;
   margin: 0 auto;
-  padding: 1rem 4rem;
+  padding: 1rem 5.5rem 1rem 4.5rem;
   align-items: center;
   align-self: center;
   width: 100%;
@@ -20,6 +20,12 @@
   
     a {
       text-decoration: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footerwrapper {
+      padding: 1.4rem;
     }
   }
 

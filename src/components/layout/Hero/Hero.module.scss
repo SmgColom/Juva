@@ -53,7 +53,7 @@
 
   ul {
     list-style: none;
-    padding: 0;
+    padding: 0.5rem;
   }
 
   li::before {
@@ -71,7 +71,6 @@
   align-items: flex-start;
 }
 
-
 @media (max-width: 1024px) {
   .content {
     gap: 3rem;
@@ -87,13 +86,25 @@
   }
 }
 
+@media (max-width: 1366px) {
+  .content {
+    gap: 3rem;
+    margin-left: 2rem;
+  }
+}
+
 
 @media (max-width: 768px) {
   .content {
+    margin-left: 0;
+    margin-right: 0;
     margin-top: 0rem;
     padding-top: 0rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     flex-direction: column;
     text-align: center;
+    align-items: center;
   }
 
   .features {
@@ -103,6 +114,10 @@
 
   .title {
     font-size: 2.6rem;
+  }
+  .right {
+    align-items: center;
+    margin: 0;
   }
 }
 

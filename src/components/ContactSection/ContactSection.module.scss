@@ -3,7 +3,7 @@
 
 .wrapper {
   background-color: $primaryColor;
-  padding: 2rem 2rem 1rem 3.5rem;
+  padding-bottom: 2rem;
 }
 
 .title {
@@ -14,22 +14,70 @@
   margin-bottom: 3rem;
 }
 
-.ContactContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
+.ContactContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 5.5rem 0 4.5rem;
 }
 
-.ContactForm{
+.ContactForm {
+  width: 100%;
+  max-width: 600px;
+}
+
+.ContactInfo {
+  
+  display: flex;
+  justify-content:flex-end;
+}
+
+@media (max-width: 1366px) {
+  .wrapper {
+    padding: 2rem;
+  }
+
+  .ContactContainer {
+    gap: 3rem;
+    margin: 0 3rem 0 2rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .ContactContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .ContactForm {
+    max-width: 100%;
+  }
+
+  .ContactInfo {
     width: 100%;
-    text-align: left;
+  }
 }
 
-.ContactInfo{
-    width: 50%;
-    align-items: flex-start;
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .wrapper {
+    padding: 2rem 1.5rem;
+  }
+
+  .ContactInfo {
+    display: flex;
+    justify-content: center;
+  }
 }
+
+
+
 
 
 

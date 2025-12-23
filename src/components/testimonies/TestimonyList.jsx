@@ -13,21 +13,34 @@ export default function TestimoniesList() {
 
       <Swiper
         modules={[Autoplay]}
-        spaceBetween={32}
-        slidesPerView={2}
         autoplay={{
           delay: 3500,
           disableOnInteraction: false,
         }}
         loop={true}
+
+        /* 👇 AQUÍ está la solución real */
+        spaceBetween={32}
+        slidesPerView={2}
         breakpoints={{
           0: {
             slidesPerView: 1,
+            spaceBetween: 16,
           },
           768: {
             slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          1367: {
+            slidesPerView: 2,
+            spaceBetween: 10,
           },
         }}
+
         className={styles.grid}
       >
         {testimonies.map((testimony) => (
@@ -39,5 +52,6 @@ export default function TestimoniesList() {
     </div>
   );
 }
+
 
 
