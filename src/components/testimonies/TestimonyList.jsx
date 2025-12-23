@@ -19,7 +19,7 @@ export default function TestimoniesList() {
         }}
         loop={true}
 
-        /* 👇 AQUÍ está la solución real */
+        
         spaceBetween={32}
         slidesPerView={2}
         breakpoints={{

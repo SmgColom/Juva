@@ -6,11 +6,31 @@ export const services = [
     description: "Kitchen, Bathroom(s), Rooms and Common Areas",
     icon: "/standard_cleaning.svg",
     details: `
-      • Sweep, mop, vacuum  
-      • Clean bathrooms  
-      • Dusting  
-      • Wipe surfaces  
-      • Trash removal  
+    The standard cleaning service includes:
+
+    Kitchen:
+
+    - Clean countertops.
+    - Clean the exterior of cabinets and appliances (not the interior).
+    - Clean the sink and faucets.
+    - Clean the microwave (exterior and interior).
+    - Vacuuming and mopping.
+
+    Bathroom(s):
+
+    - Clean the toilet.
+    - Clean the shower, bathtub, and sink.
+    - Empty trash cans.
+    - Clean mirrors.
+
+    Rooms and Common Areas:
+
+    - Dusting surfaces (tables, shelves, furniture).
+    - Vacuuming carpets.
+    - Sweeping and mopping hard floors.
+    - Cleaning accessible light switches, handles, and baseboards.
+
+    The duration and type of cleaning may vary depending on the size of the house and its current level of cleanliness. 
     `,
   },
   {
