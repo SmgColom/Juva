@@ -7,7 +7,7 @@ const ContactInfo = () => (
   <div className={styles.infoBox}>
     <div>
       <a
-        href="https://wa.me/573022460236?text=Hola!%20Quisiera%20hablar%20contigo%20sobre%20una%20consulta."
+        href="https://wa.me/61415563521?text=Hi%21%20I%27d%20like%20to%20get%20more%20information%20about%20your%20cleaning%20service."
         target="_blank"
         rel="noopener noreferrer"
       >
