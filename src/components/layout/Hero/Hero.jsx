@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./Hero.module.scss";
 import Button from '@/components/common/Button/Button';
+import { FaCheck } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -20,15 +21,15 @@ export default function Hero() {
 
         <div className={styles.features}>
           <ul>
-            <li>Trusted professionals</li>
-            <li>Cleanliness and Order</li>
-            <li>Availability</li>
+            <li><FaCheck /> Trusted professionals</li>
+            <li><FaCheck /> Cleanliness and Order</li>
+            <li><FaCheck /> Availability</li>
           </ul>
 
           <ul>
-            <li>High Attention To Detail</li>
-            <li>Open Communication To Understand Your needs</li>
-            <li>Order that makes everything look good</li>
+            <li><FaCheck /> High Attention To Detail</li>
+            <li><FaCheck /> Open Communication To Understand Your needs</li>
+            <li><FaCheck /> Order that makes everything look good</li>
           </ul>
         </div>
       </div>

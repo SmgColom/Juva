@@ -55,11 +55,6 @@
     list-style: none;
     padding: 0.5rem;
   }
-
-  li::before {
-    content: "✔️ ";
-  }
-
   li {
     margin-bottom: 0.6rem;
   }

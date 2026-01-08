@@ -12,6 +12,7 @@ export default function ServiceCard({ service, onOpen }) {
 
       <h3>{service.title}</h3>
       <p>{service.description}</p>
+      <h3>{service.price}</h3>
 
       <button
         className={styles.more}

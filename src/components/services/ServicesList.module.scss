@@ -16,6 +16,12 @@
   max-width: 1300px;
   margin: 0 auto;
   padding: 2rem 2rem 3rem 1rem;
+
+  @media (max-width: 1023px) {
+  .content {
+  padding: 2rem 7rem 3rem 5rem;
+  }
+}
 }
 
 .titulo {
@@ -29,7 +35,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2.5rem;              
   justify-items: center;
 }
@@ -37,8 +43,7 @@
 
 @media (max-width: 1023px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .titulo {
