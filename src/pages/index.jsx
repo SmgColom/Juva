@@ -20,6 +20,8 @@ export default function Home() {
           Professional Cleaning Services in Melbourne | Juva Cleaning
         </title>
 
+        <meta name="google-site-verification" content="z3oVAvtIjinawOqVfh3w1GUEVhsEu9lmBLr857Vm1ac" />
+
         {/* Meta description */}
         <meta
           name="description"
