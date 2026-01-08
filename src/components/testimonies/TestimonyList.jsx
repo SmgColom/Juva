@@ -9,7 +9,7 @@ import "swiper/css";
 export default function TestimoniesList() {
   return (
     <div className={styles.wrapper}>
-      <h1 className={styles.titulo}>What Our Clients Say</h1>
+      <h2 className={styles.titulo}>What Our Clients Say</h2>
 
       <Swiper
         modules={[Autoplay]}
