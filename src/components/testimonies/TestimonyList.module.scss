@@ -24,9 +24,11 @@
   }
 
 
-:global(.swiper-slide) {
-  display: flex;
-  justify-content: center;
+.testimonyList {
+  :global(.swiper-slide) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .grid {
