@@ -22,13 +22,13 @@ export default function Hero() {
         <div className={styles.features}>
           <ul>
             <li><FaCheck /> Trusted professionals</li>
-            <li><FaCheck /> Cleanliness and Order</li>
+            <li><FaCheck /> Cleanliness and order</li>
             <li><FaCheck /> Availability</li>
           </ul>
 
           <ul>
-            <li><FaCheck /> High Attention To Detail</li>
-            <li><FaCheck /> Open Communication To Understand Your needs</li>
+            <li><FaCheck /> High attention to detail</li>
+            <li><FaCheck /> Open communication to understand your needs</li>
             <li><FaCheck /> Order that makes everything look good</li>
           </ul>
         </div>
