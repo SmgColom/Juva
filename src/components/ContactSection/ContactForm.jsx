@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Joi from "joi";
+import Image from "next/image"; // ✅ IMPORTANTE
 import styles from "./ContactForm.module.scss";
 import Button from "@/components/common/Button/Button";
 
@@ -30,6 +31,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     const { error } = schema.validate(formData, { abortEarly: false });
+
     if (error) {
       const newErrors = {};
       error.details.forEach(
@@ -69,6 +71,8 @@ const ContactForm = () => {
 
   return (
     <div className={styles.infoWrapper}>
+      
+      {/* FORMULARIO */}
       <form className={styles.form} onSubmit={handleSubmit}>
         <input
           name="Name"
@@ -80,7 +84,7 @@ const ContactForm = () => {
 
         <input
           name="LastName"
-          placeholder="Lastname"
+          placeholder="Last name"
           value={formData.LastName}
           onChange={handleChange}
         />
@@ -119,6 +123,10 @@ const ContactForm = () => {
 
         <Button type="submit">Send</Button>
       </form>
+
+      <div>
+      </div>
+
     </div>
   );
 };

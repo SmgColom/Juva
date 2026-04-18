@@ -2,7 +2,7 @@
 export const services = [
   {
     id: 1,
-    title: "Standard Cleaning Service",
+    title: "Windows Cleaning Service",
     description: "Full Bathroom Clean, Vacuum Floors, Mop Floors,Kitchen Surfaces, Dusting, Housekeeping, Laundry.",
     price: "Book today from $60 per hour",
     icon: "/standard_cleaning.svg",
@@ -144,9 +144,9 @@ export const services = [
   },
   {
     id: 2,
-    title: "Regular Cleaning ",
+    title: "Standard Cleaning ",
     description: "Full Bathroom Clean, Vacuum Floors, Mop Floors, Kitchen Surfaces, Dusting",
-    price: "Book today from $50 per hour",
+    price: "Book today for free to get a quote",
     icon: "/Broom.svg",
     details: `
     <p> This service is ideal for both regular and one-off cleanings. It focuses on the most frequently used areas of the home to maintain a clean, organized, and pleasant environment.
@@ -279,7 +279,7 @@ Before the service begins, we recommend discussing your specific needs with the 
     id: 3,
     title: "Deep Cleaning",
     description: "Full Bathroom Clean, Vacuum Floors, Mop Floors, Kitchen Surfaces, Dusting, Oven and Rangehood Clean, Internal Cabinet Clean, Window Clean",
-    price: "Book today from $450 per 6 hours",
+    price: "Book today for free to get a quote",
     icon: "/Hands.svg",
     details: `
     <p> Our Deep Cleaning service is designed for homes that require a thorough and detailed clean, reaching all areas, corners, and surfaces that are not usually covered during regular cleaning. This service is ideal for those looking to have their home left completely spotless, with attention to every detail and the removal of built-up dust, dirt, and residue.
@@ -401,7 +401,7 @@ Deep Cleaning requires more hours than standard cleaning, and the cleaner will p
     id: 4,
     title: "End of Lease Cleaning",
     description: "End of Lease Cleaning is designed to leave the property completely spotless and ready for handover, meeting the standards required by landlords or real estate agencies.",
-    price: "Book today from $450 per 6 hours",
+    price: "Book today for free to get a quote",
     icon: "/Bucket.svg",
     details: `
     <p> This is the most comprehensive cleaning service we offer, covering all surfaces, corners, and appliances, including areas that are not usually addressed during regular or deep cleaning services.

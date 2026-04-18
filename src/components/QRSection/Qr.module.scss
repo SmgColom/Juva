@@ -1,0 +1,224 @@
+@use "sass:color";
+@use '@/styles/scss/abstracts/' as *;
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5rem 1.5rem;
+  background-color: white;
+}
+
+.content {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+}
+
+.title {
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: #243b53;
+  margin: 0;
+}
+
+.features {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.qrBox {
+  width: 100%;
+  max-width: 1320px;
+  background-color: white;
+  border-radius: 36px;
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  box-sizing: border-box;
+}
+
+.qrBox h3 {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 700;
+  color: #243b53;
+  margin: 0;
+}
+
+.qrBox p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #4b5563;
+  margin: 0;
+  max-width: 700px;
+}
+
+.qrImages {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+  justify-items: center; // 🔥 clave para centrar cards
+}
+
+.qrItem {
+  width: 100%;
+  max-width: 520px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 1.5rem;
+  background: #f8f4ec;
+  border-radius: 32px;
+  box-sizing: border-box;
+}
+
+.qrItem h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #243b53;
+  margin: 0;
+}
+
+.qrItem :global(img) {
+  width: auto;
+  height: auto;
+  max-width: 160px;
+}
+
+.note {
+  font-size: 1rem;
+  color: #667085;
+  margin-top: 0.25rem;
+}
+
+//////////////////////////////////////////////////////
+// 📱 RESPONSIVE
+//////////////////////////////////////////////////////
+
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 4rem 1.25rem;
+  }
+
+  .content {
+    gap: 2.5rem;
+  }
+
+  .qrBox {
+    padding: 2.5rem 1.75rem;
+    border-radius: 28px;
+  }
+
+  .qrImages {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    justify-items: center; // 🔥 mantener centrado
+  }
+
+  .qrItem {
+    max-width: 420px;
+    min-height: 240px;
+    padding: 1.75rem 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 3rem 1rem;
+  }
+
+  .content {
+    gap: 2rem;
+  }
+
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .qrBox {
+    padding: 2rem 1.2rem;
+    gap: 1.5rem;
+    border-radius: 24px;
+  }
+
+  .qrBox h3 {
+    font-size: 1.5rem;
+  }
+
+  .qrItem {
+    max-width: 360px;
+    min-height: 220px;
+    padding: 1.5rem 1rem;
+    border-radius: 22px;
+  }
+
+  .qrItem h4 {
+    font-size: 1.05rem;
+  }
+
+  .qrItem :global(img) {
+    max-width: 130px;
+  }
+
+  .qrBox p,
+  .note {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 2.5rem 0.85rem;
+  }
+
+  .content {
+    gap: 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .qrBox {
+    padding: 1.5rem 0.9rem;
+    border-radius: 20px;
+    gap: 1.25rem;
+  }
+
+  .qrBox h3 {
+    font-size: 1.25rem;
+  }
+
+  .qrImages {
+    gap: 1rem;
+  }
+
+  .qrItem {
+    max-width: 320px;
+    min-height: auto;
+    padding: 1.25rem 0.75rem;
+    border-radius: 18px;
+  }
+
+  .qrItem :global(img) {
+    max-width: 110px;
+  }
+
+  .qrBox p,
+  .note {
+    font-size: 0.9rem;
+  }
+}
