@@ -4,149 +4,23 @@ export const services = [
     id: 1,
     title: "Windows Cleaning Service",
     description: "Full Bathroom Clean, Vacuum Floors, Mop Floors,Kitchen Surfaces, Dusting, Housekeeping, Laundry.",
-    price: "Book today from $60 per hour",
+    price: "Book today for a free quote",
     icon: "/standard_cleaning.svg",
     details: `
-    <p> Standard Cleaning includes all Regular Cleaning tasks, plus a set of additional services that allow for a more thorough and detailed cleaning of your home.:
+    <p> Our professional window cleaning service is designed to leave your windows spotless, streak-free, and crystal clear. We clean both interior and exterior glass surfaces, removing dust, dirt, water marks, and buildup to improve natural light and the overall appearance of your home.:
 
-<h3>Kitchen:
+<p> This service includes detailed cleaning of window glass, frames, and sills where accessible.
 
-<li> Cleaning countertops and sink
+<p> We use high-quality tools and products to ensure a flawless finish while maintaining the safety and integrity of your property.
 
-<Li> Exterior cleaning of appliances
-
-<Li> Exterior cleaning of cabinets
-
-<Li> Cleaning the stovetop and backsplash
-
-<Li> Exterior cleaning of the microwave
-
-<Li> Dusting table and chairs
-
-<Li>Emptying trash and replacing the liner
-
-<h3>Bathroom(s):
-
-
-
-<Li> Cleaning and disinfecting toilets
-
-<Li> Cleaning shower and/or bathtub
-
-<Li> Cleaning sinks and faucets
-
-<Li> Cleaning countertops
-
-<Li> Exterior cleaning of cabinets
-
-<Li> Emptying trash and replacing the liner
-
-<h3>Bedrooms & Common Areas:
-
-
-
-<Li> Dusting surfaces and furniture
-
-<Li> General tidying
-
-<Li> Vacuuming and mopping floors
-
-<Li> Cleaning mirrors
-
-<Li> Basic cleaning of accessible light switches, door handles, and baseboards 
-
-<h3>Additional Standard Cleaning Tasks
-
-<p>These tasks are performed only if the booked time allows and represent added value beyond regular cleaning:
-
-<h3>Kitchen
-
-
-<li>Interior microwave cleaning
-
-<li>Washing dishes in the dishwasher or loading the dishwasher
-
-<h3>Bedrooms & Laundry
-
-
-<li>Changing bed linens
-
-<li>Making the bed
-
-<li>Washing clothes
-
-<li>Hanging clothes to dry
-
-<li>Folding clothes
-
-<p>These additional tasks help ensure your home is left completely clean and organized, without you having to worry about the most time-consuming household chores.
-
-<h3>Cleaning Limitations
-
-<p>Some tasks can only be performed on a limited or spot-cleaning basis:
-
-<li>Blinds can only be lightly dusted
-
-<li>Walls can only be spot-cleaned
-
-<h3> Additional Exclusions
-
-<p>The following tasks are not included in the service:
-
-<li> Lifting objects weighing more than 10 kg (including large furniture)
-
-<li> Cleaning ceilings or surfaces beyond normal reach
-
-<li> Cleaning light fixtures or lighting accessories
-
-<li> Cleaning heating or air ducts
-
-<li> Use of ladders (except for deep cleaning services, using ladders with a maximum of 2 steps for specific cases such as bathroom exhaust fans or moldings)
-
-<li> Exterior window cleaning
-
-<li> Deep stain removal
-
-<li> Cleaning heavy pet messes or heavily soiled areas
-
-<li> Mold removal or biohazard materials (e.g. diaper pails, etc.)
-
-<li> Steam cleaning
-
-<li> Deep carpet cleaning or shampooing (standard vacuuming is included)
-
-<li> Insect or pest extermination
-
-<li> Trash removal or collection
-
-<li> Operating washing machines or dryers (except for laundry services included within the booked time)
-
-<li> Handling fragile items or delicate decorations
-
-<li> Grill / barbecue cleaning
-
-<li> Garages and patios (except for basic sweeping)
-
-<li> Gardening and outdoor work
-
-<li> Any areas outside the home
-
-<h3> Pricing for Recurring Services (Weekly or Fortnightly)
-
-<li> $60 per hour if you provide your own cleaning supplies
-
-<li> $65 per hour if you would like us to provide the cleaning supplies
-
-<h3> One-Off Clean
-
-<li> A $10 per hour surcharge applies on top of the standard rate.
+<p> Perfect as an add-on to your regular cleaning or as a standalone service, window cleaning helps maintain a fresh, bright, and well-presented home.
     `,
   },
   {
     id: 2,
     title: "Standard Cleaning ",
     description: "Full Bathroom Clean, Vacuum Floors, Mop Floors, Kitchen Surfaces, Dusting",
-    price: "Book today for free to get a quote",
+    price: "Book today for a free quote",
     icon: "/Broom.svg",
     details: `
     <p> This service is ideal for both regular and one-off cleanings. It focuses on the most frequently used areas of the home to maintain a clean, organized, and pleasant environment.
@@ -279,7 +153,7 @@ Before the service begins, we recommend discussing your specific needs with the 
     id: 3,
     title: "Deep Cleaning",
     description: "Full Bathroom Clean, Vacuum Floors, Mop Floors, Kitchen Surfaces, Dusting, Oven and Rangehood Clean, Internal Cabinet Clean, Window Clean",
-    price: "Book today for free to get a quote",
+    price: "Book today for a free quote",
     icon: "/Hands.svg",
     details: `
     <p> Our Deep Cleaning service is designed for homes that require a thorough and detailed clean, reaching all areas, corners, and surfaces that are not usually covered during regular cleaning. This service is ideal for those looking to have their home left completely spotless, with attention to every detail and the removal of built-up dust, dirt, and residue.
@@ -401,7 +275,7 @@ Deep Cleaning requires more hours than standard cleaning, and the cleaner will p
     id: 4,
     title: "End of Lease Cleaning",
     description: "End of Lease Cleaning is designed to leave the property completely spotless and ready for handover, meeting the standards required by landlords or real estate agencies.",
-    price: "Book today for free to get a quote",
+    price: "Book today for a free quote",
     icon: "/Bucket.svg",
     details: `
     <p> This is the most comprehensive cleaning service we offer, covering all surfaces, corners, and appliances, including areas that are not usually addressed during regular or deep cleaning services.
