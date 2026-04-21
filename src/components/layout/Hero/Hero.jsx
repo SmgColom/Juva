@@ -13,7 +13,7 @@ export default function Hero() {
         <h1 className={styles.title}>Book Your First Clean Today!</h1>
 
         <Button
-          href="https://calendar.app.google/nawraayZFF6uA6kx7"
+          href="https://calendar.app.google/EHkcSF4JTVJWpuzJ8"
           target="_blank"
         >
           Book Now!
