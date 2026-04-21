@@ -3,11 +3,11 @@ export const services = [
   {
     id: 1,
     title: "Windows Cleaning Service",
-    description: "Full Bathroom Clean, Vacuum Floors, Mop Floors,Kitchen Surfaces, Dusting, Housekeeping, Laundry.",
+    description: "Our professional window cleaning service is designed to leave your windows spotless, streak-free, and crystal clear.",
     price: "Book today for a free quote",
     icon: "/standard_cleaning.svg",
     details: `
-    <p> Our professional window cleaning service is designed to leave your windows spotless, streak-free, and crystal clear. We clean both interior and exterior glass surfaces, removing dust, dirt, water marks, and buildup to improve natural light and the overall appearance of your home.:
+    <p> We clean both interior and exterior glass surfaces, removing dust, dirt, water marks, and buildup to improve natural light and the overall appearance of your home.:
 
 <p> This service includes detailed cleaning of window glass, frames, and sills where accessible.
 
