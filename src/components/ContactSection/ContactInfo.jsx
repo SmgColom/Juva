@@ -28,6 +28,8 @@ const ContactInfo = () => (
       </a>
       <h3>Email</h3>
       <p>juvacleaning@gmail.com</p>
+      <h3>ABN Number</h3>
+      <p>57688775465</p>
     </div>
 
 
