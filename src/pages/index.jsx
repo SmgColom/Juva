@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import Hero from "../components/layout/Hero/Hero.jsx";
 import ServicesList from "../components/services/ServicesList.jsx";
+import ImageList from "../components/images/ImageList.jsx";
 import TestimonyList from "../components/testimonies/TestimonyList.jsx";
 import ContactSection from "../components/ContactSection/ContactSection.jsx";
 import Footer from "../components/Footer/Footer.jsx";
@@ -50,6 +51,7 @@ export default function Home() {
       <Hero />
       <ServicesList />
       <TestimonyList />
+      <ImageList />
       <ContactSection />
       <Qr />
       <Footer />
