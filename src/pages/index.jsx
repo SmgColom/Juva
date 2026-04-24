@@ -21,6 +21,9 @@ export default function Home() {
           Professional Cleaning Services in Melbourne | Juva Cleaning
         </title>
 
+        {/* 🔥 CANONICAL (CLAVE PARA SEO) */}
+        <link rel="canonical" href="https://juvacleaning.com.au" />
+
         <meta
           name="google-site-verification"
           content="z3oVAvtIjinawOqVfh3w1GUEVhsEu9lmBLr857Vm1ac"
@@ -34,6 +37,7 @@ export default function Home() {
         <meta name="geo.region" content="AU-VIC" />
         <meta name="geo.placename" content="Melbourne" />
 
+        {/* 🔥 OPEN GRAPH */}
         <meta
           property="og:title"
           content="Professional Cleaning Services in Melbourne | Juva Cleaning"
@@ -45,7 +49,39 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_AU" />
 
+        {/* 🔥 URL CORRECTA */}
+        <meta property="og:url" content="https://juvacleaning.com.au" />
+
+        {/* (opcional pero recomendado) */}
+        <meta property="og:image" content="https://juvacleaning.com.au/og-image.jpg" />
+
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* 🔥 JSON-LD (esto sube tu SEO local) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Juva Cleaning",
+              url: "https://juvacleaning.com.au",
+              image: "https://juvacleaning.com.au/og-image.jpg",
+              description:
+                "Professional home cleaning services in Melbourne including regular, deep and end of lease cleaning.",
+              areaServed: {
+                "@type": "Place",
+                name: "Melbourne",
+              },
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Melbourne",
+                addressRegion: "VIC",
+                addressCountry: "AU",
+              },
+            }),
+          }}
+        />
       </Head>
 
       <Hero />
