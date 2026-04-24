@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://juvacleaning.com.au
+
+# Sitemaps
+Sitemap: https://juvacleaning.com.au/sitemap.xml
