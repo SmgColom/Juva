@@ -2,8 +2,7 @@
 @use '@/styles/scss/abstracts' as *;
 
 .wrapper {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding: 2rem 2rem 3rem 1rem;
   background-color: $primaryColor;
   width: 100%;
   margin: 0 auto;

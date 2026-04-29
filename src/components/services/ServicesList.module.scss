@@ -4,6 +4,7 @@
 
 .wrapper {
   background-color: white;
+  padding: 2rem 2rem 3rem 1rem;
   width: 100vw;
   position: relative;
   left: 50%;
@@ -15,7 +16,6 @@
 .content {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 2rem 2rem 3rem 1rem;
 
   @media (max-width: 1023px) {
   .content {
