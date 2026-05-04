@@ -1,57 +1,33 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { testimonies } from "../../data/testimonies.js";
 import TestimonyCard from "./TestimonyCard.jsx";
 import styles from "./TestimonyList.module.scss";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
 
 export default function TestimoniesList() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((prev) => (prev + 2) % testimonies.length);
+    }, 3500);
+    return () => clearInterval(timer);
+  }, []);
+
+  const visible = [
+    testimonies[index % testimonies.length],
+    testimonies[(index + 1) % testimonies.length],
+  ];
+
   return (
     <div className={styles.wrapper}>
-      <h2 className={styles.titulo}>What Our Clients Say</h2>
-
-      <Swiper
-        modules={[Autoplay]}
-        autoplay={{
-          delay: 3500,
-          disableOnInteraction: false,
-        }}
-        loop={true}
-
-        
-        spaceBetween={32}
-        slidesPerView={2}
-        breakpoints={{
-          0: {
-            slidesPerView: 1,
-            spaceBetween: 16,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-          },
-          1367: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-          },
-        }}
-
-        className={styles.grid}
-      >
-        {testimonies.map((testimony) => (
-          <SwiperSlide key={testimony.id}>
-            <TestimonyCard testimony={testimony} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <div className={styles.content}>
+        <h2 className={styles.title}>What Our Clients Say</h2>
+        <div className={styles.grid}>
+          {visible.map((testimony) => (
+            <TestimonyCard key={testimony.id} testimony={testimony} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
-
-
-

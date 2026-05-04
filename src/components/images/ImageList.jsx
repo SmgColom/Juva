@@ -1,56 +1,34 @@
+import { useState, useEffect } from "react";
 import { photos } from "../../data/photos.js";
 import ImagesCard from "./ImagesCard.jsx";
 import styles from "./ImageList.module.scss";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
 
 export default function ImagesList() {
-  return (
-    <div className={styles.wrapper}>
-      <h2 className={styles.titulo}>See for yourself</h2>
+  const [index, setIndex] = useState(0);
 
-      <Swiper
-        modules={[Autoplay]}
-        autoplay={{
-          delay: 3500,
-          disableOnInteraction: false,
-        }}
-        loop={true}
-        spaceBetween={32}
-        slidesPerView={2}
-        slidesPerGroup={2}
-        breakpoints={{
-          0: {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-            spaceBetween: 16,
-          },
-          768: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
-            spaceBetween: 10,
-          },
-          1367: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
-            spaceBetween: 10,
-          },
-        }}
-        className={styles.grid}
-      >
-        {photos.map((photo) => (
-          <SwiperSlide key={photo.id}>
-            <ImagesCard photo={photo} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((prev) => (prev + 2) % photos.length);
+    }, 3500);
+    return () => clearInterval(timer);
+  }, []);
+
+  const visible = [
+    photos[index % photos.length],
+    photos[(index + 1) % photos.length],
+  ];
+
+  return (
+    <section className={styles.wrapper}>
+      <div className={styles.content}>
+        <h2 className={styles.title}>See for yourself</h2>
+        <div className={styles.grid}>
+          {visible.map((photo) => (
+            <ImagesCard key={photo.id} photo={photo} />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
 

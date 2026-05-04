@@ -3,7 +3,14 @@
 
 .wrapper {
   background-color: $primaryColor;
-  padding: 4rem 2rem 3rem;
+  padding: 2rem 0 3rem 0;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
 }
 
 .title {
@@ -11,38 +18,62 @@
   font-size: 3rem;
   font-family: "Work Sans", sans-serif;
   color: $complementaryColor;
-  margin: 0 0 1rem;
+  margin-bottom: 1rem;
 }
 
 .subtitle {
   text-align: center;
-  max-width: 620px;
-  margin: 0 auto 3rem;
-  font-size: 1.1rem;
+  max-width: 1250px;
+  margin: 0 auto 2rem;
+  font-size: 1.4rem;
   color: $complementaryColor;
-  line-height: 1.5;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-left: 6rem;
+    margin-right: 5.5rem;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1365px) {
+    max-width: 1000px;
+    margin-right: 7.5rem;
+    margin-left: 5.5rem;
+  }
 }
 
-.ContactContainer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.CalculatorContainer {
+  margin: 0 0 0 5rem;
+  max-width: 10px;
+  gap: 2rem;
+  justify-content: space-between;
+
+  @media (min-width: 1024px) and (max-width: 1365px) {
+    max-width: 1200px;
+    margin: 0 10rem 0 3rem;
+    gap: 1rem;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-left: 6.5rem;
+    justify-content: center;
+  }
 }
 
-.ContactForm {
+
+.infoWrapper {
   width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
 }
 
 .form {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 400px));
-  justify-content: space-between;
-  gap: 2rem;
+  grid-template-columns: 350px 1fr;
+  gap: 1rem 21.5rem;
   width: 100%;
-  margin: 0 auto;
+  max-width: 1200px;
   box-sizing: border-box;
+
+  @media (min-width: 1024px) and (max-width: 1365px) {
+    gap: 1rem 3rem;
+  }
 
   *,
   *::before,
@@ -50,12 +81,9 @@
     box-sizing: border-box;
   }
 
-  input,
-  textarea {
+  input {
     width: 100%;
-    max-width: 100%;
     padding: 0.8rem;
-    padding-bottom: 1rem;
     border: 1px solid $highlightColor;
     border-radius: 6px;
     font-size: 1.1rem;
@@ -65,25 +93,71 @@
     outline: none;
   }
 
+  textarea {
+    width: 520px;
+    align-self: flex-end;
+    padding: 0.8rem;
+    border: 1px solid $highlightColor;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-family: Open Sans, sans-serif;
+    background-color: $brandColor;
+    box-shadow: 0 1px 2px;
+    outline: none;
+    margin-bottom: 2rem;
+
+    @media (min-width: 1024px) and (max-width: 1366px) {
+      width: 390px;
+    }
+  }
+
   small {
     color: red;
     font-size: 0.85rem;
   }
 }
 
-.leftColumn,
-.rightColumn {
+.leftColumn {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  width: 100%;
+  gap: 1rem;
+  width: 72%;
 }
 
-.counterGrid {
+.rightColumn {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+
+  .counterGrid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.5rem;
+  align-self: flex-end;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+
+  @media (min-width: 1024px) and (max-width: 1366px) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.5rem;
+  }
+
+  @media (min-width: 430px) and (max-width: 931px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.6rem;
+  }
 }
+
+  h3 {
+    align-self: flex-end;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1366px) {
+    margin-left: 0;
+  }
+}
+
+
 
 .counterGroup {
   display: flex;
@@ -103,11 +177,15 @@
   justify-content: center;
   gap: 0.3rem;
   padding: 0.8rem;
-  padding-bottom: 1rem;
   border: 1px solid $highlightColor;
   border-radius: 6px;
   background-color: $brandColor;
   box-shadow: 0 1px 2px;
+
+  @media (min-width: 1024px) and (max-width: 1366px) {
+    min-width: 60px;
+    gap: 0.2rem;
+  }
 
   button {
     width: 22px;
@@ -127,24 +205,6 @@
   }
 }
 
-.contact__successMessage {
-  grid-column: 1 / -1;
-  text-align: center;
-  color: $complementaryColor;
-  font-weight: 600;
-}
-
-.buttonWrapper {
-  grid-column: 1 / -1;
-  display: flex;
-  justify-content: center;
-}
-
-.ContactInfo {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .sectionTitle {
   font-size: 1.4rem;
   font-weight: 700;
@@ -152,102 +212,105 @@
   margin-bottom: 0.3rem;
 }
 
-.sectionSubtitle {
-  font-size: 1.4rem;
+.contact__successMessage {
+  text-align: center;
   color: $complementaryColor;
-  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
-/* iPad Pro / laptops medianos */
-@media (min-width: 1024px) and (max-width: 1366px) {
-  .wrapper {
-    padding: 4rem 2rem 3rem;
-  }
-
-  .ContactForm {
-    max-width: 980px;
-  }
-
-  .form {
-    grid-template-columns: repeat(2, minmax(0, 360px));
-    justify-content: center;
-    gap: 2rem 4rem;
-  }
-
-  .counterGrid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1.2rem;
-  }
-
-  .sectionSubtitle {
-    font-size: 1.2rem;
-  }
+.buttonWrapper {
+  display: flex;
+  align-self: flex-end;
 }
 
-/* iPad Mini / tablets */
-@media (min-width: 769px) and (max-width: 1023px) {
+
+@media (min-width: 768px) and (max-width: 1023px) {
   .wrapper {
-    padding: 3.5rem 1.5rem 2.5rem;
+    padding: 3rem 2rem 2.5rem 0rem;
   }
 
   .title {
     font-size: 2.5rem;
-  }
-
-  .subtitle {
-    margin-bottom: 2.5rem;
-  }
-
-  .ContactForm {
-    max-width: 620px;
-  }
-
-  .form {
-    grid-template-columns: 1fr;
-    max-width: 100%;
-    gap: 3rem;
-  }
-
-  .counterGrid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1.2rem;
-  }
-
-  .buttonWrapper,
-  .contact__successMessage {
-    grid-column: auto;
-  }
-}
-
-/* iPhone 14 Pro Max / móviles grandes */
-@media (max-width: 768px) {
-  .wrapper {
-    padding: 3rem 1.25rem 2.5rem;
-  }
-
-  .title {
-    font-size: 2.2rem;
-    line-height: 1.15;
     margin-bottom: 1rem;
   }
 
   .subtitle {
-    font-size: 1rem;
-    margin-bottom: 2rem;
+    max-width: 560px;
+    margin: 0 0rem 2.5rem 5.5rem;
+    text-align: center;
+    font-size: 1.15rem;
   }
 
-  .ContactForm {
-    max-width: 100%;
+  .CalculatorContainer {
+    max-width: 560px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .infoWrapper {
+    width: 100%;
   }
 
   .form {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    max-width: 560px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 3rem;
   }
 
   .leftColumn,
   .rightColumn {
-    gap: 1.5rem;
+    width: 100%;
+    margin-left: 0;
+    align-items: stretch;
+  }
+
+  .rightColumn h3 {
+    align-self: flex-start;
+  }
+
+  .form input,
+  .form textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .form textarea {
+    align-self: stretch;
+    margin-bottom: 1rem;
+  }
+
+  .counterGrid {
+    align-self: stretch;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .counter {
+    width: 100%;
+    min-width: 0;
+    justify-content: space-between;
+    padding: 0.8rem 1rem;
+  }
+
+  .buttonWrapper {
+    justify-content: center;
+    align-self: center;
+  }
+
+  .contact__successMessage {
+    text-align: center;
+  }
+}
+
+
+  .rightColumn {
+    margin: 0;
+    padding: 0;
+    align-self: left;
+    text-align: left;
   }
 
   .counterGrid {
@@ -259,45 +322,91 @@
     font-size: 1.3rem;
   }
 
-  .sectionSubtitle {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-  }
-
   .buttonWrapper,
   .contact__successMessage {
     grid-column: auto;
   }
 
-  .ContactInfo {
+
+
+  .counter {
+    width: 100%;
     justify-content: center;
   }
-}
 
-/* móviles pequeños */
-@media (max-width: 430px) {
+  @media (max-width: 931px) {
   .wrapper {
-    padding: 2.5rem 1rem 2rem;
+    width: 100%;
+    left: auto;
+    right: auto;
+    margin: 0;
+    padding: 2rem 3.8rem 3rem;
+    text-align: center;
+    box-sizing: border-box;
   }
 
   .title {
-    font-size: 2rem;
+    font-size: 2.4rem;
+    line-height: 1.1;
+  }
+
+  .subtitle {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 2rem;
+    font-size: 1rem;
+  }
+
+  .CalculatorContainer {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 100%;
+    gap: 1.5rem;
+    padding: 0;
+  }
+
+  .leftColumn,
+  .rightColumn {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: stretch;
+    text-align: left;
+  }
+
+  .sectionTitle,
+  .rightColumn h3 {
+    align-self: center;
+    text-align: center;
+  }
+
+  .form input,
+  .form textarea {
+    width: 100%;
+    max-width: 100%;
   }
 
   .counterGrid {
+    width: 100%;
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .counter {
     width: 100%;
     justify-content: space-between;
-    padding: 0.8rem 1rem;
+  }
+
+  .buttonWrapper {
+    justify-content: center;
+    align-self: center;
   }
 }
-
-
-
-
-
-
-

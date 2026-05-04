@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Joi from "joi";
-import Image from "next/image"; // ✅ IMPORTANTE
+import Image from "next/image";
 import styles from "./ContactForm.module.scss";
 import Button from "@/components/common/Button/Button";
 

@@ -4,9 +4,9 @@ import styles from "./Qr.module.scss";
 export default function Qr() {
   return (
     <div className={styles.wrapper}>
-      <h2 className={styles.title}>Text Us</h2>
       <div className={styles.content}>
-        
+        <h2 className={styles.title}>Text Us</h2>
+
         <div className={styles.features}>
           <div className={styles.qrBox}>
             <h3>Scan the QR code</h3>

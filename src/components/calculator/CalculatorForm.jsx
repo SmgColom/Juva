@@ -21,17 +21,10 @@ const CounterInput = ({ label, name, value, setFormData }) => {
   return (
     <div className={styles.counterGroup}>
       <label>{label}</label>
-
       <div className={styles.counter}>
-        <button type="button" onClick={decrease}>
-          -
-        </button>
-
+        <button type="button" onClick={decrease}>-</button>
         <span>{value}</span>
-
-        <button type="button" onClick={increase}>
-          +
-        </button>
+        <button type="button" onClick={increase}>+</button>
       </div>
     </div>
   );
@@ -94,9 +87,7 @@ const CalculatorForm = () => {
       Area: Number(formData.Area),
     };
 
-    const { error } = schema.validate(dataToValidate, {
-      abortEarly: false,
-    });
+    const { error } = schema.validate(dataToValidate, { abortEarly: false });
 
     if (error) {
       const newErrors = {};
@@ -112,7 +103,6 @@ const CalculatorForm = () => {
     formDataToSend.append("entry.606358454", formData.LastName);
     formDataToSend.append("entry.1312283038", formData.Mobile);
     formDataToSend.append("entry.894478258", formData.email);
-
     formDataToSend.append("entry.1053560177", formData.Address);
     formDataToSend.append("entry.380256653", formData.Suburb);
     formDataToSend.append("entry.1801684072", formData.Area);
@@ -138,7 +128,6 @@ const CalculatorForm = () => {
     );
 
     setSubmitted(true);
-
     setFormData({
       Name: "",
       LastName: "",
@@ -159,189 +148,85 @@ const CalculatorForm = () => {
       Fridges: 0,
       Others: "",
     });
-
     setErrors({});
   };
 
   return (
     <div className={styles.infoWrapper}>
       <form className={styles.form} onSubmit={handleSubmit}>
+
         <div className={styles.leftColumn}>
           <h3 className={styles.sectionTitle}>Your Details</h3>
 
-          <p className={styles.sectionSubtitle}>
-            Tell us how we can contact you
-          </p>
-
-          <input
-            name="Name"
-            placeholder="Name"
-            value={formData.Name}
-            onChange={handleChange}
-          />
+          <input name="Name" placeholder="Name" value={formData.Name} onChange={handleChange} />
           {errors.Name && <small>{errors.Name}</small>}
 
-          <input
-            name="LastName"
-            placeholder="Last name"
-            value={formData.LastName}
-            onChange={handleChange}
-          />
+          <input name="LastName" placeholder="Last name" value={formData.LastName} onChange={handleChange} />
           {errors.LastName && <small>{errors.LastName}</small>}
 
-          <input
-            name="Mobile"
-            placeholder="Mobile"
-            value={formData.Mobile}
-            onChange={handleChange}
-          />
+          <input name="Mobile" placeholder="Mobile" value={formData.Mobile} onChange={handleChange} />
           {errors.Mobile && <small>{errors.Mobile}</small>}
 
-          <input
-            name="email"
-            placeholder="Email"
-            value={formData.email}
-            onChange={handleChange}
-          />
+          <input name="email" placeholder="Email" value={formData.email} onChange={handleChange} />
           {errors.email && <small>{errors.email}</small>}
 
-          <input
-            name="Address"
-            placeholder="Address"
-            value={formData.Address}
-            onChange={handleChange}
-          />
+          <input name="Address" placeholder="Address" value={formData.Address} onChange={handleChange} />
           {errors.Address && <small>{errors.Address}</small>}
 
-          <input
-            name="Suburb"
-            placeholder="Suburb"
-            value={formData.Suburb}
-            onChange={handleChange}
-          />
+          <input name="Suburb" placeholder="Suburb" value={formData.Suburb} onChange={handleChange} />
           {errors.Suburb && <small>{errors.Suburb}</small>}
 
-          <input
-            name="Area"
-            type="number"
-            placeholder="Area (sqm)"
-            value={formData.Area}
-            onChange={handleChange}
-          />
+          <input name="Area" type="number" placeholder="Area (sqm)" value={formData.Area} onChange={handleChange} />
           {errors.Area && <small>{errors.Area}</small>}
         </div>
 
         <div className={styles.rightColumn}>
           <h3 className={styles.sectionTitle}>Property Details</h3>
 
-          <p className={styles.sectionSubtitle}>
-            Select the size of your property
-          </p>
-
           <div className={styles.counterGrid}>
-
-          <CounterInput
-            label="Rooms"
-            name="Rooms"
-            value={formData.Rooms}
-            setFormData={setFormData}
-          />
-          {errors.Rooms && <small>{errors.Rooms}</small>}
-
-          <CounterInput
-            label="Bathrooms"
-            name="Bathrooms"
-            value={formData.Bathrooms}
-            setFormData={setFormData}
-          />
-          {errors.Bathrooms && <small>{errors.Bathrooms}</small>}
-
-          <CounterInput
-            label="Kitchens"
-            name="Kitchens"
-            value={formData.Kitchens}
-            setFormData={setFormData}
-          />
-          {errors.Kitchens && <small>{errors.Kitchens}</small>}
-
-          <CounterInput
-            label="Dining Areas"
-            name="Dining"
-            value={formData.Dining}
-            setFormData={setFormData}
-          />
-          {errors.Dining && <small>{errors.Dining}</small>}
-
-          <CounterInput
-            label="Living Areas"
-            name="Living"
-            value={formData.Living}
-            setFormData={setFormData}
-          />
-          {errors.Living && <small>{errors.Living}</small>}
-
-          <CounterInput
-            label="Balconies"
-            name="Balconies"
-            value={formData.Balconies}
-            setFormData={setFormData}
-          />
-          {errors.Balconies && <small>{errors.Balconies}</small>}
-
-          <CounterInput
-            label="Garages"
-            name="Garages"
-            value={formData.Garages}
-            setFormData={setFormData}
-          />
-          {errors.Garages && <small>{errors.Garages}</small>}
-
-          <CounterInput
-            label="Ovens"
-            name="Ovens"
-            value={formData.Ovens}
-            setFormData={setFormData}
-          />
-          {errors.Ovens && <small>{errors.Ovens}</small>}
-
-          <CounterInput
-            label="Staircases"
-            name="Staircases"
-            value={formData.Staircases}
-            setFormData={setFormData}
-          />
-          {errors.Staircases && <small>{errors.Staircases}</small>}
-
-          <CounterInput
-            label="Fridges"
-            name="Fridges"
-            value={formData.Fridges}
-            setFormData={setFormData}
-          />
-          {errors.Fridges && <small>{errors.Fridges}</small>}
-
+            <CounterInput label="Rooms" name="Rooms" value={formData.Rooms} setFormData={setFormData} />
+            {errors.Rooms && <small>{errors.Rooms}</small>}
+            <CounterInput label="Bathrooms" name="Bathrooms" value={formData.Bathrooms} setFormData={setFormData} />
+            {errors.Bathrooms && <small>{errors.Bathrooms}</small>}
+            <CounterInput label="Kitchens" name="Kitchens" value={formData.Kitchens} setFormData={setFormData} />
+            {errors.Kitchens && <small>{errors.Kitchens}</small>}
+            <CounterInput label="Dining Areas" name="Dining" value={formData.Dining} setFormData={setFormData} />
+            {errors.Dining && <small>{errors.Dining}</small>}
+            <CounterInput label="Living Areas" name="Living" value={formData.Living} setFormData={setFormData} />
+            {errors.Living && <small>{errors.Living}</small>}
+            <CounterInput label="Balconies" name="Balconies" value={formData.Balconies} setFormData={setFormData} />
+            {errors.Balconies && <small>{errors.Balconies}</small>}
+            <CounterInput label="Garages" name="Garages" value={formData.Garages} setFormData={setFormData} />
+            {errors.Garages && <small>{errors.Garages}</small>}
+            <CounterInput label="Ovens" name="Ovens" value={formData.Ovens} setFormData={setFormData} />
+            {errors.Ovens && <small>{errors.Ovens}</small>}
+            <CounterInput label="Staircases" name="Staircases" value={formData.Staircases} setFormData={setFormData} />
+            {errors.Staircases && <small>{errors.Staircases}</small>}
+            <CounterInput label="Fridges" name="Fridges" value={formData.Fridges} setFormData={setFormData} />
+            {errors.Fridges && <small>{errors.Fridges}</small>}
           </div>
 
           <textarea
             name="Others"
             placeholder="Other details (optional)"
-            rows="5"
+            rows="2"
             value={formData.Others}
             onChange={handleChange}
+    
           />
           {errors.Others && <small>{errors.Others}</small>}
+
+          {submitted && (
+            <p className={styles.contact__successMessage}>
+              Thank you! Your information has been submitted. Our team will contact you in less than 24 hours.
+            </p>
+          )}
+
+          <div className={styles.buttonWrapper}>
+            <Button type="submit">Get My Quote</Button>
+          </div>
         </div>
 
-        {submitted && (
-          <p className={styles.contact__successMessage}>
-            Thank you! Your information has been submitted. Our team will
-            contact you in less than 24 hours.
-          </p>
-        )}
-
-        <div className={styles.buttonWrapper}>
-          <Button type="submit">Get My Quote</Button>
-        </div>
       </form>
     </div>
   );

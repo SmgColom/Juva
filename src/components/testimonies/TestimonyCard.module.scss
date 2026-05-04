@@ -2,9 +2,9 @@
 @use "@/styles/scss/abstracts" as *;
 
 .wrapper{
-  background-color: $primaryColor;
-  padding: 2rem 2rem 3rem 1rem;
   width: 100%;
+  display: flex;
+  justify-content: center; 
 }
 
 .card {

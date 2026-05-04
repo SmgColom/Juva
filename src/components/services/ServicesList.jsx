@@ -11,7 +11,7 @@ export default function ServicesList() {
   return (
     <section className={styles.wrapper}>
       <div className={styles.content}>
-        <h2 className={styles.titulo}>Our Services</h2>
+        <h2 className={styles.title}>Our Services</h2>
 
         <div className={styles.grid}>
           {services.map((service) => (
