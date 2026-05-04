@@ -21,7 +21,7 @@ export default function ImagesList() {
   return (
     <section className={styles.wrapper}>
       <div className={styles.content}>
-        <h2 className={styles.title}>See for yourself</h2>
+        <h2 className={styles.title}>See For Yourself</h2>
         <div className={styles.grid}>
           {visible.map((photo) => (
             <ImagesCard key={photo.id} photo={photo} />

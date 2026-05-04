@@ -142,9 +142,13 @@
     gap: 0.5rem;
   }
 
-  @media (min-width: 430px) and (max-width: 931px) {
+  @media (min-width: 390px) and (max-width: 931px) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0.6rem;
+  }
+    @media (min-width: 390px) and (max-width: 843px) {
+    
+    gap: 0.5rem;
   }
 }
 

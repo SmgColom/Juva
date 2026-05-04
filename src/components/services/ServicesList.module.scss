@@ -92,13 +92,14 @@
   }
 }
 
-@media (min-width: 430px) and (max-width: 767px){
+@media (min-width: 390px) and (max-width: 767px){
 
   .content{
     margin:4rem;
+  }
+
   }
   .grid{
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-}

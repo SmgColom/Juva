@@ -114,3 +114,9 @@
     margin: 0;
   }
 }
+
+  @media (min-width: 390px) and (max-width: 843px) {
+    .right {
+      max-width:500px;
+    }
+  }
