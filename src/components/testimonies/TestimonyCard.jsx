@@ -2,6 +2,7 @@ import styles from "./TestimonyCard.module.scss";
 
 export default function TestimonyCard({ testimony }) {
   return (
+  <div className={styles.wrapper}>
     <div className={styles.card}>
       <span className={styles.quoteStart}>“</span>
 
@@ -11,6 +12,7 @@ export default function TestimonyCard({ testimony }) {
 
       <span className={styles.quoteEnd}>”</span>
     </div>
+  </div>
   );
 }
 

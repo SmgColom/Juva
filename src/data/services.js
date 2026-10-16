@@ -1,4 +1,3 @@
-// src/data/services.js
 export const services = [
   {
     id: 1,
@@ -141,12 +140,13 @@ Before the service begins, we recommend discussing your specific needs with the 
 
 <h3> Pricing for Recurring Services (Weekly or Fortnightly)
 
-<li> $50 per hour if you provide your own cleaning supplies
-<li> $55 per hour if you would like us to provide the cleaning supplies
+<li> $65 per hour if you provide your own cleaning supplies
+<li> $70 per hour if you would like us to provide the cleaning supplies
 
 <h3> One-Off Clean
 
-<li> A $10 per hour surcharge applies on top of the standard rate.
+<li> $80 per hour if you provide your own cleaning supplies
+<li> $85 per hour if you would like us to provide the cleaning supplies
     `,
   },
   {
